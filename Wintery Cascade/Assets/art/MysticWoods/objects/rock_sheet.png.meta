@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a9e4f074ccce34846829c473a60b40f7
+guid: ce6dc50751a5cad4ab3d93beeef7d11b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: chest_01_0
+      name: rock_sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3dec79b12166e845902237350a32e3d
-      internalID: 2136553196
+      spriteID: 7ab44e6a16576ac4e94c4a51a1530306
+      internalID: 395114182
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chest_01_1
+      name: rock_sheet_1
       rect:
         serializedVersion: 2
         x: 16
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2f09438441931545a63bedd4483ce1d
-      internalID: 372224898
+      spriteID: a2a67f6573da3004a805f7a8f49e1756
+      internalID: 1725177488
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chest_01_2
+      name: rock_sheet_2
       rect:
         serializedVersion: 2
         x: 32
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d849af4ab5305f43937da3acf3ee866
-      internalID: -1789294288
+      spriteID: 471f238545dfef546a898d4b3ccd60a0
+      internalID: 2097049245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: chest_01_3
+      name: rock_sheet_3
       rect:
         serializedVersion: 2
         x: 48
@@ -187,8 +187,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5c737d80432f694186f47c9a8181c50
-      internalID: -19787276
+      spriteID: b8fa723223bc6d640bb39724f9f8d6ef
+      internalID: 474088586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65319289aae61da4bb52887830cdf7b0
+      internalID: 148470480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rock_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093b9f63628b16e45919d79fdc377d4a
+      internalID: 1784663330
       vertices: []
       indices: 
       edges: []
@@ -204,10 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      chest_01_0: 2136553196
-      chest_01_1: 372224898
-      chest_01_2: -1789294288
-      chest_01_3: -19787276
+      rock_sheet_0: 395114182
+      rock_sheet_1: 1725177488
+      rock_sheet_2: 2097049245
+      rock_sheet_3: 474088586
+      rock_sheet_4: 148470480
+      rock_sheet_5: 1784663330
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

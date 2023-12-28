@@ -41,15 +41,9 @@ public class PlayerController : MonoBehaviour
             movementFilter, 
             castCollisions, 
             moveSpeed * Time.fixedDeltaTime + collisionOffset);
-        if(count == 0)
-        {
-            rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        
+        rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
+        return true;
     }
 
     void OnMove(InputValue movementValue)

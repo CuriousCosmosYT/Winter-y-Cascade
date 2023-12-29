@@ -3769,7 +3769,11 @@ Tilemap:
     e33: 1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &473790129
+=======
+--- !u!1 &444317433
+>>>>>>> parent of d1b4c65 (Revert "Who knew making this would be hard")
 =======
 --- !u!1 &444317433
 >>>>>>> parent of d1b4c65 (Revert "Who knew making this would be hard")
@@ -3781,6 +3785,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 473790132}
   - component: {fileID: 473790131}
   - component: {fileID: 473790130}
@@ -3791,11 +3796,17 @@ GameObject:
   m_Layer: 0
   m_Name: Swing point
 >>>>>>> parent of d1b4c65 (Revert "Who knew making this would be hard")
+=======
+  - component: {fileID: 444317434}
+  m_Layer: 0
+  m_Name: Swing point
+>>>>>>> parent of d1b4c65 (Revert "Who knew making this would be hard")
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!114 &473790130
 MonoBehaviour:
@@ -3852,11 +3863,15 @@ MonoBehaviour:
 =======
 --- !u!4 &444317434
 >>>>>>> parent of d1b4c65 (Revert "Who knew making this would be hard")
+=======
+--- !u!4 &444317434
+>>>>>>> parent of d1b4c65 (Revert "Who knew making this would be hard")
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 473790129}
   serializedVersion: 2
@@ -3871,6 +3886,8 @@ Transform:
 =======
 >>>>>>> d1b4c65fdd7cecf5351b974d642c573005abbbdb
 =======
+=======
+>>>>>>> parent of d1b4c65 (Revert "Who knew making this would be hard")
   m_GameObject: {fileID: 444317433}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -3880,6 +3897,9 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1360399161}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+>>>>>>> parent of d1b4c65 (Revert "Who knew making this would be hard")
+=======
 >>>>>>> parent of d1b4c65 (Revert "Who knew making this would be hard")
 --- !u!1 &519420028
 GameObject:
@@ -3895,11 +3915,16 @@ GameObject:
   - component: {fileID: 519420033}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 519420035}
   - component: {fileID: 519420034}
   - component: {fileID: 519420036}
 =======
 >>>>>>> d1b4c65fdd7cecf5351b974d642c573005abbbdb
+=======
+  - component: {fileID: 519420035}
+  - component: {fileID: 519420034}
+>>>>>>> parent of d1b4c65 (Revert "Who knew making this would be hard")
 =======
   - component: {fileID: 519420035}
   - component: {fileID: 519420034}
@@ -4007,6 +4032,9 @@ MonoBehaviour:
   m_StretchFill: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of d1b4c65 (Revert "Who knew making this would be hard")
 =======
 >>>>>>> parent of d1b4c65 (Revert "Who knew making this would be hard")
 --- !u!212 &519420034
@@ -4083,6 +4111,7 @@ Animator:
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &519420036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4119,6 +4148,8 @@ MonoBehaviour:
       m_Calls: []
 =======
 >>>>>>> d1b4c65fdd7cecf5351b974d642c573005abbbdb
+=======
+>>>>>>> parent of d1b4c65 (Revert "Who knew making this would be hard")
 =======
 >>>>>>> parent of d1b4c65 (Revert "Who knew making this would be hard")
 --- !u!1 &912375113
@@ -5087,6 +5118,7 @@ Animator:
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &1360399155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5112,6 +5144,13 @@ Transform:
 =======
 >>>>>>> parent of d1b4c65 (Revert "Who knew making this would be hard")
   m_PrefabAsset: {fileID: 0}
+=======
+--- !u!4 &1360399161 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5113151060222791389, guid: 6238aa0968d731344b5926efef84e36b, type: 3}
+  m_PrefabInstance: {fileID: 8359458381044923563}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of d1b4c65 (Revert "Who knew making this would be hard")
 --- !u!1 &1614566971
 GameObject:
   m_ObjectHideFlags: 0

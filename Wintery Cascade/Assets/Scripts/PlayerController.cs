@@ -11,10 +11,14 @@ public class PlayerController : MonoBehaviour
 
     Vector2 movementInput;
     Rigidbody2D rb;
+    Animator animator;
+    SpriteRenderer spriteRenderer;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void FixedUpdate()
@@ -31,7 +35,28 @@ public class PlayerController : MonoBehaviour
                     success = TryMove(new Vector2(0, movementInput.y));
                 }
             }
+            animator.SetBool("isMoving", success);
         }
+        else{
+            animator.SetBool("isMoving", false);
+        }
+        if(movementInput.x < 0){
+            spriteRenderer.flipX = true;
+        }else if(movementInput.x > 0){
+            spriteRenderer.flipX = false;
+        }
+        if(movementInput.y < 0){
+            animator.SetBool("movingDown", true);
+            animator.SetBool("movingUp", false);
+        }else if(movementInput.y > 0){
+            animator.SetBool("movingUp", true);
+            animator.SetBool("movingDown", false);
+        }
+        else if(movementInput.y == 0){
+            animator.SetBool("movingUp", false);
+            animator.SetBool("movingDown", false);
+        }
+        
     }
 
     private bool TryMove(Vector2 direction)

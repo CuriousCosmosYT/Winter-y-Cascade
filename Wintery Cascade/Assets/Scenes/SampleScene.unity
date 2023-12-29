@@ -3767,7 +3767,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
-<<<<<<< HEAD
 --- !u!1 &473790129
 GameObject:
   m_ObjectHideFlags: 0
@@ -3853,8 +3852,6 @@ Transform:
   - {fileID: 1430076}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> d1b4c65fdd7cecf5351b974d642c573005abbbdb
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3867,12 +3864,9 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
-<<<<<<< HEAD
   - component: {fileID: 519420035}
   - component: {fileID: 519420034}
   - component: {fileID: 519420036}
-=======
->>>>>>> d1b4c65fdd7cecf5351b974d642c573005abbbdb
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3974,7 +3968,6 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
-<<<<<<< HEAD
 --- !u!212 &519420034
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4082,8 +4075,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
-=======
->>>>>>> d1b4c65fdd7cecf5351b974d642c573005abbbdb
 --- !u!1 &912375113
 GameObject:
   m_ObjectHideFlags: 0
@@ -5054,7 +5045,6 @@ MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
-<<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1360399141}
   m_Enabled: 1
@@ -5066,15 +5056,7 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5113151060222791389, guid: 6238aa0968d731344b5926efef84e36b, type: 3}
   m_PrefabInstance: {fileID: 8359458381044923563}
-=======
->>>>>>> d1b4c65fdd7cecf5351b974d642c573005abbbdb
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1360399141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63b172b03b6a34246bda58abdc090ba8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1614566971
 GameObject:
   m_ObjectHideFlags: 0

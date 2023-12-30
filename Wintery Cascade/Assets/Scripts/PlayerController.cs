@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 1f;
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
+    bool canMove = true;
 
     Vector2 movementInput;
     Rigidbody2D rb;
@@ -23,45 +24,48 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(movementInput != Vector2.zero)
+        if (canMove)
         {
-            bool success = TryMove(movementInput);
-
-            if(!success)
+            if(movementInput != Vector2.zero)
             {
-                success = TryMove(new Vector2(movementInput.x, 0));
+                bool success = TryMove(movementInput);
+
                 if(!success)
                 {
-                    success = TryMove(new Vector2(0, movementInput.y));
+                    success = TryMove(new Vector2(movementInput.x, 0));
+                    if(!success)
+                    {
+                        success = TryMove(new Vector2(0, movementInput.y));
+                    }
                 }
+                animator.SetBool("isMoving", success);
             }
-            animator.SetBool("isMoving", success);
-        }
-        else{
-            animator.SetBool("isMoving", false);
-        }
-        if(movementInput.x < 0)
-        {
-            spriteRenderer.flipX = true;
-        }
-        else if(movementInput.x > 0)
-        {
-            spriteRenderer.flipX = false;
-        }
-        if(movementInput.y < 0)
-        {
-            animator.SetBool("movingDown", true);
-            animator.SetBool("movingUp", false);
-        }
-        else if(movementInput.y > 0)
-        {
-            animator.SetBool("movingUp", true);
-            animator.SetBool("movingDown", false);
-        }
-        else if(movementInput.y == 0)
-        {
-            animator.SetBool("movingUp", false);
-            animator.SetBool("movingDown", false);
+            else{
+                animator.SetBool("isMoving", false);
+            }
+            if(movementInput.x < 0)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else if(movementInput.x > 0)
+            {
+                spriteRenderer.flipX = false;
+            }
+            if(movementInput.y < 0)
+            {
+                animator.SetBool("movingDown", true);
+                animator.SetBool("movingUp", false);
+            }
+            else if(movementInput.y > 0)
+            {
+                animator.SetBool("movingUp", true);
+                animator.SetBool("movingDown", false);
+            }
+            else if(movementInput.y == 0)
+            {
+                animator.SetBool("movingUp", false);
+                animator.SetBool("movingDown", false);
+            }
         }
     }
 
@@ -80,5 +84,20 @@ public class PlayerController : MonoBehaviour
     void OnMove(InputValue movementValue)
     {
         movementInput = movementValue.Get<Vector2>();
+    }
+
+    void OnFire()
+    {
+        animator.SetTrigger("attack");
+    }
+
+    public void LockMovement()
+    {
+        canMove = false;
+    }
+
+    public void UnlockMovement()
+    {
+        canMove = true;
     }
 }

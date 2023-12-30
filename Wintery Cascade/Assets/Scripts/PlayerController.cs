@@ -3,18 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+// Takes and handles input and movement for a player character
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 1f;
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
-    bool canMove = true;
+    public SwordAttack swordAttack;
+    public SwordAttack swordAttack2;
 
     Vector2 movementInput;
+    SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
     Animator animator;
-    SpriteRenderer spriteRenderer;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+
+    bool canMove = true;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -91,13 +95,38 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("attack");
     }
 
-    public void LockMovement()
-    {
+    public void SwordAttack() {
+        LockMovement();
+
+        if(spriteRenderer.flipX == true){
+            swordAttack.AttackLeft();
+        } else {
+            swordAttack.AttackRight();
+        }
+    }
+
+    public void EndSwordAttack() {
+        UnlockMovement();
+        swordAttack.StopAttack();
+        
+        swordAttack2.StopAttack();
+    }
+
+    public void SwordAttackUp() {
+        LockMovement();
+        swordAttack2.AttackUp();
+    }
+
+    public void SwordAttackDown() {
+        LockMovement();
+        swordAttack2.AttackDown();
+    }
+
+    public void LockMovement() {
         canMove = false;
     }
 
-    public void UnlockMovement()
-    {
+    public void UnlockMovement() {
         canMove = true;
     }
 }

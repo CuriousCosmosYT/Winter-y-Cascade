@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Fence
   m_EditorClassIdentifier: 
   <name>k__BackingField: 
-  <Tile>k__BackingField: {fileID: 0}
+  <Tile>k__BackingField: {fileID: 11400000, guid: 81b6a7eec17bee741802fc1985d46943, type: 2}

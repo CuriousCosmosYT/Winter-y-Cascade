@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.Tilemaps;
 
 namespace BuildingSystem
@@ -11,4 +11,4 @@ namespace BuildingSystem
         [field:SerializeField]
         public TileBase Tile{get; private set;}
     }
-}
+}*/
